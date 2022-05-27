@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:wght@300&family=Radio+Canada&family=Roboto&family=Source+Sans+Pro:ital@1&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    
+}
+
+body{
+    background: url(../img/footer_lodyas.png);
+    background-repeat: repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;  
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(175, 174, 174, 0.3);
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 9999;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited{
+    color: white;
+}
+
+
+a:hover{
+    color: crimson;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 2.5rem;
+    padding: 10px 5px; 
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    color:white;
+}
+
+.titulo::before{
+    content: '';
+    border-bottom: 18px solid crimson;
+    width: 26rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 12.5rem;
+    top: 6.5rem;
+    z-index: -1;
+
+}
+
+.subtitulo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5em;
+    color:white;
+}
+
+.titulo2{
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 500%;
+    color:white;
+}
+.titulo2:before {
+    content: '';
+    border-bottom: 18px solid crimson;
+    width: 17rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 2rem;
+    top: 6.5rem;
+    z-index: -1;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    color: antiquewhite;
+    width: 100%;
+    height: 2rem;
+    padding: 10rem 0 5rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    top: 100%;
+}
+
+.seleccionado a{
+    color: crimson;
+}
+
+.contact{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: large;
+    text-align: center;
+    padding: 0 60rem 3rem 60rem;
+    display: block;
+    margin: 0.1rem auto;
+  
+
+}
+
+
+#nombre{
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   background-color: rgba(128, 128, 128, 0.541);
+   border-color: rgba(128, 128, 128, 0.541);
+   width: 30rem;
+   height: 3rem;
+   text-align: left;
+   padding-left: 1rem;
+   border-radius: 1rem;
+   display: block;
+   margin: 0.1rem auto;
+}
+
+#correo{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.541);
+    border-color: rgba(128, 128, 128, 0.541);
+    width: 30rem;
+    height: 3rem;
+    text-align: left;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    display: block;
+    margin: 0.1rem auto;
+ }
+
+ #mensaje{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.541);
+    border-color: rgba(128, 128, 128, 0.541);
+    width: 30rem;
+    height: 18rem;
+    text-align: left;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    display: block;
+    margin: 0.1rem auto;
+    resize: none;
+ }
+
+ #enviar{
+    font-family: 'Roboto', sans-serif;
+    height: 3rem;
+    width: 11rem;
+    text-align: center;
+    display: block;
+    margin: 0.1rem auto;
+    position: relative;
+    left: 10rem;
+ }
+
+ img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+ }
+
+
+.hombresimple{
+     max-width: 60em;
+     max-height: 60em;
+     display: inline-block;
+    
+     position: absolute;
+     padding: 5em 5em 5em 20em;
+ }
+
+ .tecnologias{
+    max-width: 60em;
+    max-height: 60em;
+    display: inline-block;
+   
+    position: absolute;
+    padding: 5em 5em 5em 20em;
+
+ }
+
+ .aboutme{
+     color: white;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 3em;
+     text-align: center;
+     padding: 3em 3em 3em 20em;  
+     position: absolute;
+     
+ }
+
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 10rem;
+   
+  }
+
+
+.frutas:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 100px black;
+}
