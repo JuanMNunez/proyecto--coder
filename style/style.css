@@ -219,9 +219,13 @@ body{
         color: aliceblue;
         text-align: center;
         padding: 10px;
+        background-color: #000000;
     }
 
-    
+    .flipContainer{
+        z-index: -999;
+    }
+  
 
 
     .formulario{
