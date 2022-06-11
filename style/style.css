@@ -369,7 +369,7 @@ body{
     background-color: transparent;
     height: 100%;
     width: auto;
-    perspective: 800px;
+    perspective: 1000px;
 }
 
 .card{
@@ -477,11 +477,13 @@ body{
   }
 
   .gridConteiner{
+      margin:7%;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: 
       "grid1 grid2 grid3"
       "grid4 grid5 grid6";
+      
   }
 
   .mainFormulario{
