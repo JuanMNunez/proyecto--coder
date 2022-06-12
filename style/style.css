@@ -204,10 +204,6 @@ body{
         
     }
 
-    .grid6{
-        display: none;
-    }
-
     .card{
         border: solid 2px crimson;
         background-color: #000000;
@@ -360,64 +356,62 @@ body{
     "grid5 grid6";
   }
 
-  .grid6{
-      display: block;
-  }
-
-
-  .flipContainer{
-    background-color: transparent;
-    height: 100%;
-    width: auto;
-    perspective: 1000px;
-}
-
-.card{
+  .card{
     position: relative;
     height: 100%;
     width: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    border: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
     background-color: transparent;
+    border-radius: none;
     padding: 0;
-    border-radius: 0;
 }
 
-.flipContainer:hover .card {
-    transform: rotateY( 180deg ) ;
-    transition: transform 1.5s;
-  }
-
-  .frente,
-  .dorso {
-    position: absolute;
+.card .frente{
     height: 100%;
     width: 100%;
-    background: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    backface-visibility: hidden;
-    
-  }
+    overflow: hidden;
+}
 
-  .dorso {
-    background: #000000;
-    color: white;
-    transform: rotateY( 180deg );
-    box-sizing: border-box;
+.frente img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.card:hover .frente img{
+    transform: translateX(20%);
+}
+
+.dorso{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #0c0b33;
+    transition: 1s;
+    transform-origin: left;
+    transform:  rotateY(-90deg);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-  }
+    align-items: center;
+    font-size: 2rem;
+}
 
-  .dorso button{
-      width: 8rem;
-      height: 5rem;
-      font-size: 2rem;
-  }
+.dorso button{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card:hover .dorso {
+    transform: rotateY(0deg);}
+
+
 
 
 
