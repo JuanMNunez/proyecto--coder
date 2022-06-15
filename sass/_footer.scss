@@ -1,0 +1,38 @@
+
+footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .copy{
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+
+        
+        p a{
+        font-size: 1rem;
+
+        &:visited{
+            color: aliceblue;
+         }
+
+
+         &:hover{
+            color: crimson;
+        }
+        
+      }
+    }
+
+@media(min-width:768px){
+
+
+
+
+        footer p a{
+          border-bottom: none;
+        }
+    }

@@ -1,0 +1,52 @@
+.mainAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    .hombreSimple{
+        width: 60%;
+        height: auto;
+        padding: 50px;
+    }
+
+    .titulo2{
+        text-align: center;
+        font-size: 4rem;
+        color: aliceblue;
+        text-decoration: underline crimson;
+    }
+
+    .aboutMe{
+        color: aliceblue;
+        text-align: center;
+        margin: 10px 20px;
+        font-size: 2rem;
+    }
+}
+
+
+@media(min-width:768px){
+
+    .mainAbout{
+        margin-top: 100px;
+
+        .titulo2, .aboutMe{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media(min-width:1024px){
+
+    .mainAbout{
+        flex-direction: row;
+
+        .hombreSimple{
+            width: 40%;
+            height: auto;
+        }
+      
+    }
+
+}

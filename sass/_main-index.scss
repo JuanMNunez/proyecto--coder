@@ -1,0 +1,48 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+
+    span{
+        color: crimson;
+        font-style: italic;
+    }
+
+    .animacion{
+        overflow: hidden;
+        border-right: .2em solid crimson;
+        white-space: nowrap;
+        font-size: 2rem;
+        width: 0;
+        animation: typing 2s steps(30, end) forwards,
+                   blink 1s infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+    @keyframes blink {
+        from { border-color: transparent }
+        to { border-color: crimson; }
+      }
+
+}
+
+@media(min-width:768px){
+
+    .home{
+        font-size: 2.5rem;
+
+        .animacion{
+            font-size: 2.5rem;
+        }
+    }
+
+}
