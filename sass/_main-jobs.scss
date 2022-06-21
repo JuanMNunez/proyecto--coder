@@ -13,15 +13,11 @@
         font-size: 4rem;
         color: $colorT;
         text-decoration: underline $colorP;
+        @include mediaQuerry(md){
+            margin-top: 100px;
+        }
     }
 }
 
-@media(min-width:768px){
-
-    .mainProjectos{
-        margin-top: 100px;
-   
-  }
-}
 
 

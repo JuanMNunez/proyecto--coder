@@ -414,8 +414,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 10vh auto 10vh;
-      grid-template-rows: 10vh auto 10vh;
+  -ms-grid-rows: auto auto 10vh;
+      grid-template-rows: auto auto 10vh;
       grid-template-areas: "header" "main" "footer";
 }
 
@@ -632,6 +632,9 @@ header nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mainAbout .hombreSimple {
@@ -700,7 +703,7 @@ header nav ul li a {
 
 .mainFormulario .titulo2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: aliceblue;
   -webkit-text-decoration: underline crimson;
           text-decoration: underline crimson;
@@ -727,35 +730,35 @@ header nav ul li a {
   color: white;
   background-color: rgba(128, 128, 128, 0.541);
   border-color: rgba(128, 128, 128, 0.541);
-  width: 60rem;
-  height: 3rem;
+  width: 30rem;
   border-radius: 7px;
   margin-bottom: 1rem;
   padding: 5px;
+  height: 3rem;
 }
 
 .mainFormulario .formulario #correo {
-  font-family: 'Roboto', sans-serif;
   color: white;
   background-color: rgba(128, 128, 128, 0.541);
   border-color: rgba(128, 128, 128, 0.541);
-  width: 60rem;
-  height: 3rem;
+  width: 30rem;
   border-radius: 7px;
   margin-bottom: 1rem;
   padding: 5px;
+  height: 3rem;
 }
 
 .mainFormulario .formulario #mensaje {
   color: white;
   background-color: rgba(128, 128, 128, 0.541);
   border-color: rgba(128, 128, 128, 0.541);
-  width: 60rem;
-  height: 18rem;
+  width: 30rem;
   border-radius: 7px;
-  resize: none;
   margin-bottom: 1rem;
   padding: 5px;
+  height: 3rem;
+  height: 18rem;
+  resize: none;
 }
 
 .mainFormulario .formulario #enviar {
@@ -797,17 +800,15 @@ header nav ul li a {
 }
 
 @media (min-width: 768px) {
-  #nombre, #correo {
+  #nombre, #correo, #mensaje {
+    width: 50rem;
     height: 7rem;
-    width: 50rem;
-    font-size: 2rem;
-    padding-left: 10px;
-  }
-  #mensaje {
-    width: 50rem;
-    height: 21rem;
     font-size: 2rem;
     padding: 10px 0 0 10px;
+    font-weight: 500;
+  }
+  #mensaje {
+    height: 21rem;
   }
   #enviar {
     height: 5rem;
@@ -844,6 +845,9 @@ header nav ul li a {
   .mainFormulario section {
     max-width: 700px;
   }
+  .mainFormulario .formulario form #correo, .mainFormulario .formulario form #mensaje, .mainFormulario .formulario form #nombre {
+    width: 60rem;
+  }
 }
 
 .mainExp {
@@ -863,6 +867,16 @@ header nav ul li a {
   gap: 60px;
 }
 
+@media (min-width: 1024px) {
+  .mainExp {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
+  }
+}
+
 .mainExp div .titulo2 {
   text-align: center;
   font-size: 4rem;
@@ -880,16 +894,6 @@ header nav ul li a {
 
 .mainExp .mainExp img {
   margin-top: 50px;
-}
-
-@media (min-width: 1024px) {
-  .mainExp {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 50px;
-  }
 }
 
 .home {
@@ -921,7 +925,7 @@ header nav ul li a {
 }
 
 @media (min-width: 768px) {
-  .mainProjectos {
+  .home .titulo2 {
     margin-top: 100px;
   }
 }

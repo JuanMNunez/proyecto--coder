@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+    @include mediaQuerry(lg){
+        flex-direction: row;
+        padding: 50px;
+    }
 
     div{
         
@@ -20,24 +24,10 @@
           margin: 10px 20px;
           font-size: 2rem;
       }
-
     }
-
-    
 
     .mainExp img{
         margin-top: 50px;
     }
-
-
 }
 
-@media(min-width:1024px){
-    
-    .mainExp{
-        flex-direction: row;
-        padding: 50px;
-    }
-
-  
-  }

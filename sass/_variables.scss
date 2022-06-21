@@ -1,3 +1,30 @@
 $colorP: crimson;
 $colorT: aliceblue;
 $colorC: white;
+
+@mixin contacto {
+    color: $colorC;
+    background-color: rgba(128, 128, 128, 0.541);
+    border-color: rgba(128, 128, 128, 0.541);
+    width: 30rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    padding: 5px;
+    height: 3rem;
+}
+
+@mixin mediaQuerry($size) {
+    @if map-has-key($breakpoint, $size) {
+        @media (min-width: #{map-get($breakpoint, $size)}) {
+            @content;
+        }
+    }
+}
+
+// Map
+
+$breakpoint:(
+    md: 768px,
+    lg: 1024px,
+);
+

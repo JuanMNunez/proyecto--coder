@@ -52,7 +52,7 @@ footer{
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: auto auto 10vh;
     grid-template-areas: "header"
                          "main"
                          "footer";
