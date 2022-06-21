@@ -17,17 +17,42 @@
 }
 
 
-.card{
-    border: solid 2px crimson;
-    background-color: #000000;
-    padding: 25px;
-    border-radius: 10px;
+.flipContainer{
 
-    .dorso{
-        color: aliceblue;
-        text-align: center;
-        padding: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+   .card{
+       border: solid 2px crimson;
+       background-color: #000000;
+       padding: 25px;
+       border-radius: 10px;
+       display: inline-block;
+
+
+       .dorso{
+           color: aliceblue;
+           text-align: center;
+           padding: 10px;
+       }
+
+       .frente{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+   
+
+           img{
+               height: auto;
+               width: 300px;
+          }
+       }
+   }
+
 }
 
 @media(min-width:768px){
@@ -73,7 +98,7 @@
                 top: 0;
                 left: 0;
                 width: 70%;
-                height: 94%;
+                height: 96%;
                 background: #0c0b33;
                 transition: 1s;
                 transform-origin: left;
@@ -84,6 +109,7 @@
                 align-items: center;
                 font-size: 1.5rem;
                 overflow: hidden;
+                border-bottom-right-radius: 50%;
 
               button{
                  padding: 10px;

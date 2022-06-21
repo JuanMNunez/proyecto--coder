@@ -920,17 +920,51 @@ header nav ul li a {
           text-decoration: underline crimson;
 }
 
-.card {
+.flipContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flipContainer .card {
   border: solid 2px crimson;
   background-color: #000000;
   padding: 25px;
   border-radius: 10px;
+  display: inline-block;
 }
 
-.card .dorso {
+.flipContainer .card .dorso {
   color: aliceblue;
   text-align: center;
   padding: 10px;
+}
+
+.flipContainer .card .frente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flipContainer .card .frente img {
+  height: auto;
+  width: 300px;
 }
 
 @media (min-width: 768px) {
@@ -974,7 +1008,7 @@ header nav ul li a {
     top: 0;
     left: 0;
     width: 70%;
-    height: 94%;
+    height: 96%;
     background: #0c0b33;
     -webkit-transition: 1s;
     transition: 1s;
@@ -997,6 +1031,7 @@ header nav ul li a {
             align-items: center;
     font-size: 1.5rem;
     overflow: hidden;
+    border-bottom-right-radius: 50%;
   }
   .mainProjectos .card .dorso button {
     padding: 10px;
