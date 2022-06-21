@@ -352,7 +352,7 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 footer {
@@ -414,8 +414,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
+  -ms-grid-rows: 10vh auto 10vh;
+      grid-template-rows: 10vh auto 10vh;
       grid-template-areas: "header" "main" "footer";
 }
 
@@ -456,10 +456,10 @@ body {
 
 html {
   font-size: 62.5%;
-  font-family: 'Radio Canada', sans-serif;
 }
 
 body {
+  font-family: 'Radio Canada', sans-serif;
   background: url(../img/space.jpg);
   background-repeat: repeat;
   height: 100%;
@@ -568,7 +568,7 @@ header nav ul li a {
 
 .home .animacion {
   overflow: hidden;
-  border-right: .2em solid crimson;
+  border-right: 0.2em solid crimson;
   white-space: nowrap;
   font-size: 2rem;
   width: 0;
@@ -841,7 +841,7 @@ header nav ul li a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .mainFormulario div {
+  .mainFormulario section {
     max-width: 700px;
   }
 }
@@ -1008,7 +1008,7 @@ header nav ul li a {
     top: 0;
     left: 0;
     width: 70%;
-    height: 96%;
+    height: 97%;
     background: #0c0b33;
     -webkit-transition: 1s;
     transition: 1s;
@@ -1054,6 +1054,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 1rem;
 }
 
 footer .copy {
@@ -1061,20 +1062,20 @@ footer .copy {
   font-size: 1.5rem;
 }
 
-footer p a {
+footer div a {
   font-size: 1rem;
 }
 
-footer p a:visited {
+footer div a:visited {
   color: aliceblue;
 }
 
-footer p a:hover {
+footer div a:hover {
   color: crimson;
 }
 
 @media (min-width: 768px) {
-  footer p a {
+  footer div a {
     border-bottom: none;
   }
 }

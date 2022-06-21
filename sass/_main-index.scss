@@ -3,19 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: $colorT;
     font-size: 2rem;
     text-align: center;
     margin: 20px;
 
     span{
-        color: crimson;
+        color: $colorP;
         font-style: italic;
     }
 
     .animacion{
         overflow: hidden;
-        border-right: .2em solid crimson;
+        border-right: .2em solid $colorP;
         white-space: nowrap;
         font-size: 2rem;
         width: 0;
@@ -30,7 +30,7 @@
 
     @keyframes blink {
         from { border-color: transparent }
-        to { border-color: crimson; }
+        to { border-color: $colorP; }
       }
 
 }

@@ -13,12 +13,12 @@
     .titulo2{
         text-align: center;
         font-size: 4rem;
-        color: aliceblue;
-        text-decoration: underline crimson;
+        color: $colorT;
+        text-decoration: underline $colorP;
     }
 
     .aboutMe{
-        color: aliceblue;
+        color: $colorT;
         text-align: center;
         margin: 10px 20px;
         font-size: 2rem;

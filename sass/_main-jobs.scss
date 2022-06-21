@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: $colorT;
     font-size: 2rem;
     text-align: center;
     margin: 20px;
@@ -11,8 +11,8 @@
     .titulo2{
         text-align: center;
         font-size: 4rem;
-        color: aliceblue;
-        text-decoration: underline crimson;
+        color: $colorT;
+        text-decoration: underline $colorP;
     }
 }
 
@@ -27,7 +27,7 @@
 
 
    .card{
-       border: solid 2px crimson;
+       border: solid 2px $colorP;
        background-color: #000000;
        padding: 25px;
        border-radius: 10px;
@@ -35,7 +35,7 @@
 
 
        .dorso{
-           color: aliceblue;
+           color: $colorT;
            text-align: center;
            padding: 10px;
        }
@@ -98,7 +98,7 @@
                 top: 0;
                 left: 0;
                 width: 70%;
-                height: 96%;
+                height: 97%;
                 background: #0c0b33;
                 transition: 1s;
                 transform-origin: left;
