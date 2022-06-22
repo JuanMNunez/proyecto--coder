@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
-    @include mediaQuerry(lg){
+    margin-bottom: 45px;
+    @include mediaQuerry(md){
         flex-direction: row;
-        padding: 50px;
     }
 
     div{
@@ -23,11 +23,86 @@
           text-align: center;
           margin: 10px 20px;
           font-size: 2rem;
+          max-width: 50rem;
       }
     }
 
-    .mainExp img{
-        margin-top: 50px;
+    .expContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .exp{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: auto;  
+            gap: 20px; 
+
+            .expCard1, .expCard2, .expCard3, .expCard4{
+                @include tarjetaExp
+            }
+                
+            .expCard1{
+                font-size: 5rem;
+                color: #FF5733;
+
+                &:hover{
+                    transform: scale(1.3) rotate(90deg);
+                    background-color: #FF5733;
+                    color: black;
+
+                    .iconoHtml{
+                        transform: scale(1.3) rotate(-90deg); 
+                    } 
+                }       
+            }
+
+            .expCard2{
+                font-size: 5rem;
+                color: #4c3af0;
+
+                &:hover{
+                    transform: scale(1.3) rotate(90deg);
+                    background-color: #4c3af0;
+                    color: black;
+
+                    .iconoCss{
+                        transform: scale(1.3) rotate(-90deg); 
+                    } 
+                }       
+            }
+
+            .expCard3{
+                font-size: 5rem;
+                color: #F682FE;
+
+                &:hover{
+                    transform: scale(1.3) rotate(90deg);
+                    background-color: #F682FE;
+                    color: black;
+
+                    .iconoSass{
+                        transform: scale(1.3) rotate(-90deg); 
+                    } 
+                }       
+            }
+
+            .expCard4{
+                font-size: 5rem;
+                color: #A626FF;
+
+                &:hover{
+                    transform: scale(1.3) rotate(90deg);
+                    background-color: #A626FF;
+                    color: black;
+
+                    .iconoBs{
+                        transform: scale(1.3) rotate(-90deg); 
+                    } 
+                }       
+            }
+        }
     }
-}
+}  
 

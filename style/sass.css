@@ -414,8 +414,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto 10vh;
-      grid-template-rows: auto auto 10vh;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
       grid-template-areas: "header" "main" "footer";
 }
 
@@ -865,15 +865,15 @@ header nav ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 60px;
+  margin-bottom: 45px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .mainExp {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 50px;
   }
 }
 
@@ -890,10 +890,119 @@ header nav ul li a {
   text-align: center;
   margin: 10px 20px;
   font-size: 2rem;
+  max-width: 50rem;
 }
 
-.mainExp .mainExp img {
-  margin-top: 50px;
+.mainExp .expContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.mainExp .expContainer .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: auto;
+  gap: 20px;
+}
+
+.mainExp .expContainer .exp .expCard1, .mainExp .expContainer .exp .expCard2, .mainExp .expContainer .exp .expCard3, .mainExp .expContainer .exp .expCard4 {
+  height: 10rem;
+  width: 10rem;
+  -webkit-box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 2px solid #755158;
+}
+
+.mainExp .expContainer .exp .expCard1 {
+  font-size: 5rem;
+  color: #FF5733;
+}
+
+.mainExp .expContainer .exp .expCard1:hover {
+  -webkit-transform: scale(1.3) rotate(90deg);
+          transform: scale(1.3) rotate(90deg);
+  background-color: #FF5733;
+  color: black;
+}
+
+.mainExp .expContainer .exp .expCard1:hover .iconoHtml {
+  -webkit-transform: scale(1.3) rotate(-90deg);
+          transform: scale(1.3) rotate(-90deg);
+}
+
+.mainExp .expContainer .exp .expCard2 {
+  font-size: 5rem;
+  color: #4c3af0;
+}
+
+.mainExp .expContainer .exp .expCard2:hover {
+  -webkit-transform: scale(1.3) rotate(90deg);
+          transform: scale(1.3) rotate(90deg);
+  background-color: #4c3af0;
+  color: black;
+}
+
+.mainExp .expContainer .exp .expCard2:hover .iconoCss {
+  -webkit-transform: scale(1.3) rotate(-90deg);
+          transform: scale(1.3) rotate(-90deg);
+}
+
+.mainExp .expContainer .exp .expCard3 {
+  font-size: 5rem;
+  color: #F682FE;
+}
+
+.mainExp .expContainer .exp .expCard3:hover {
+  -webkit-transform: scale(1.3) rotate(90deg);
+          transform: scale(1.3) rotate(90deg);
+  background-color: #F682FE;
+  color: black;
+}
+
+.mainExp .expContainer .exp .expCard3:hover .iconoSass {
+  -webkit-transform: scale(1.3) rotate(-90deg);
+          transform: scale(1.3) rotate(-90deg);
+}
+
+.mainExp .expContainer .exp .expCard4 {
+  font-size: 5rem;
+  color: #A626FF;
+}
+
+.mainExp .expContainer .exp .expCard4:hover {
+  -webkit-transform: scale(1.3) rotate(90deg);
+          transform: scale(1.3) rotate(90deg);
+  background-color: #A626FF;
+  color: black;
+}
+
+.mainExp .expContainer .exp .expCard4:hover .iconoBs {
+  -webkit-transform: scale(1.3) rotate(-90deg);
+          transform: scale(1.3) rotate(-90deg);
 }
 
 .home {
