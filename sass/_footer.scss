@@ -1,39 +1,36 @@
 
 footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1rem;
 
 
-        .copy{
+      .copy{
             color: $colorT;
             font-size: 1.5rem;
-        }
+      }
 
         
-        div a{
+      div a{
         font-size: 1rem;
+        color: $colorT;
 
-        &:visited{
-            color: $colorT;
+      &:visited{
+        color: $colorT;
          }
 
 
-         &:hover{
-            color: $colorP;
-        }
-        
+      &:hover{
+        color: $colorP;
+        }        
       }
     }
 
 @media(min-width:768px){
-
-
-
-
-        footer div a{
+  
+      footer div a{
           border-bottom: none;
-        }
+      }
     }

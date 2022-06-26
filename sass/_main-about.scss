@@ -3,17 +3,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    
+    margin-top: 40px;
+   
     .hombreSimple{
-        width: 60%;
+        width: 35%;
         height: auto;
-        padding: 50px;
+        padding: 10px;
     }
 
     .titulo2{
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         color: $colorT;
         text-decoration: underline $colorP;
     }
@@ -21,16 +21,15 @@
     .aboutMe{
         color: $colorT;
         text-align: center;
-        margin: 10px 20px;
+        margin: 0 30px;
         font-size: 2rem;
     }
 }
 
-
 @media(min-width:768px){
 
     .mainAbout{
-        margin-top: 100px;
+        margin-top: 50px;
 
         .titulo2, .aboutMe{
             font-size: 3rem;
@@ -42,12 +41,17 @@
 
     .mainAbout{
         flex-direction: row;
+        justify-content: space-around;
 
         .hombreSimple{
-            width: 40%;
+            width: 20%;
             height: auto;
+            margin-left: 100px;
         }
-      
-    }
 
+        div{
+            max-width: 70%;
+            text-align: center;
+        }    
+    }
 }
