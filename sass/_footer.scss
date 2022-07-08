@@ -6,7 +6,6 @@ footer{
       justify-content: center;
       padding-bottom: 1rem;
 
-
       .copy{
             color: $colorT;
             font-size: 1.5rem;
@@ -14,8 +13,9 @@ footer{
 
         
       div a{
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: $colorT;
+        padding: 0 20px;
 
       &:visited{
         color: $colorT;

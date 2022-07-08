@@ -5,8 +5,9 @@
     justify-content: center;
     gap: 60px;
     margin-bottom: 45px;
-    @include mediaQuerry(md){
+    @include mediaQuerry(lg){
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
     div{
@@ -22,8 +23,11 @@
           color: $colorT;
           text-align: center;
           margin: 10px 20px;
-          font-size: 2rem;
-          max-width: 50rem;
+          font-size: 2.5rem;
+          max-width: 70rem;
+          @include mediaQuerry(lg){
+            max-width: 54rem;
+          }
       }
     }
 
@@ -31,6 +35,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        transform: rotate(45deg);
 
         .exp{
             display: flex;
@@ -47,6 +52,10 @@
                 font-size: 5rem;
                 color: #FF5733;
 
+                .iconoHtml{
+                    transform: rotate(-45deg);
+                }
+
                 &:hover{
                     transform: scale(1.3) rotate(90deg);
                     background-color: #FF5733;
@@ -54,7 +63,7 @@
                     transition-duration: .7s;
 
                     .iconoHtml{
-                        transform: scale(1.3) rotate(-90deg);
+                        transform: scale(1.3) rotate(-135deg);
                         transition-duration: .7s; 
                     } 
                 }       
@@ -64,6 +73,10 @@
                 font-size: 5rem;
                 color: #4c3af0;
 
+                .iconoCss{
+                    transform: rotate(-45deg);
+                }
+
                 &:hover{
                     transform: scale(1.3) rotate(90deg);
                     background-color: #4c3af0;
@@ -71,7 +84,7 @@
                     transition-duration: .7s;
 
                     .iconoCss{
-                        transform: scale(1.3) rotate(-90deg);
+                        transform: scale(1.3) rotate(-135deg);
                         transition-duration: .7s; 
                     } 
                 }       
@@ -81,6 +94,10 @@
                 font-size: 5rem;
                 color: #F682FE;
 
+                .iconoSass{
+                    transform: rotate(-45deg);
+                }
+
                 &:hover{
                     transform: scale(1.3) rotate(90deg);
                     transition-duration: .7s;
@@ -88,7 +105,7 @@
                     color: black;
 
                     .iconoSass{
-                        transform: scale(1.3) rotate(-90deg);
+                        transform: scale(1.3) rotate(-135deg);
                         transition-duration:.7s;
                     } 
                 }       
@@ -97,18 +114,23 @@
             .expCard4{
                 font-size: 5rem;
                 color: #A626FF;
+
+                .iconoBs{
+                    transform: rotate(-45deg);
+                }
                 
                 &:hover{
                     transform: scale(1.3) rotate(90deg);
                     background-color: #A626FF;
                     color: black;
                     transition-duration: .7s;
+                    animation: iconosExp 1s ease-in-out;
 
                     .iconoBs{
-                        transform: scale(1.3) rotate(-90deg); 
+                        transform: scale(1.3) rotate(-135deg); 
                         transition-duration: .7s;
-                    } 
-                }       
+                    }
+                }
             }
         }
     }
